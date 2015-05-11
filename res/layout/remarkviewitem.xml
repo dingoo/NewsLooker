@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/newsbg_listpage">
+
+    <TextView android:layout_width="60dp"
+              android:layout_height="70dp"
+              android:id="@+id/tv_user"
+              android:drawableTop="@drawable/me"
+              android:text="昵称昵昵称"
+              android:gravity="center_horizontal"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_ur"
+              android:layout_alignTop="@+id/tv_user"
+              android:layout_toRightOf="@+id/tv_user"
+              android:text="@string/test"
+              android:textColor="#99000000"
+              android:padding="5dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_utime"
+              android:layout_below="@+id/tv_ur"
+              android:layout_alignParentRight="true"
+              android:text="创建于 2015-5-12 12：34：10"
+              android:layout_margin="10dp"/>
+</RelativeLayout>
