@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/newsbg_listpage"
+              android:orientation="vertical" >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:id="@+id/article_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="10.0dip" >
+
+            <RelativeLayout
+                    android:id="@+id/article_top_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                        android:id="@+id/title_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="7.0dip" >
+
+                    <ImageView
+                            android:id="@+id/right_image"
+                            android:layout_width="86dip"
+                            android:layout_height="60dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="4.0dip"
+                            android:layout_marginTop="3.0dip"
+                            android:background="@drawable/small_image_holder_listpage"
+                            android:scaleType="centerCrop" />
+
+                    <TextView
+                            android:id="@+id/item_title"
+                            style="@style/item_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/right_image" />
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:id="@+id/info_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:layout_below="@id/title_layout"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                    <TextView
+                            android:id="@+id/item_source"
+                            style="@style/item_secondary_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                    <TextView
+                            android:id="@+id/list_item_local"
+                            style="@style/item_local"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:paddingLeft="2.0dip"
+                            android:paddingRight="2.0dip" />
+
+                    <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="1.0dip"
+                            android:layout_weight="1.0"
+                            android:minWidth="8.0dip" />
+
+                    <TextView
+                            android:id="@+id/comment_count"
+                            style="@style/item_secondary_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0" />
+
+                    <TextView
+                            android:id="@+id/hits_count"
+                            style="@style/item_secondary_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0" />
+
+                    <TextView
+                            android:id="@+id/publish_time"
+                            style="@style/item_secondary_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dp"
+                            android:layout_weight="0.0"
+                            android:paddingRight="8.0dip" />
+
+                    <View
+                            android:id="@+id/right_padding_view"
+                            android:layout_width="25.0dip"
+                            android:layout_height="1.0dip"
+                            android:layout_weight="0.0" />
+                </LinearLayout>
+
+                <View
+                        android:id="@+id/popicon_anchor"
+                        android:layout_width="1.0dip"
+                        android:layout_height="5.0dip"
+                        android:layout_alignBottom="@id/title_layout"
+                        android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/item_abstract"
+                    style="@style/item_abstract"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginRight="7.0dip"
+                    android:lineSpacingExtra="4.0dip" />
+
+        </LinearLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ffdddddd" />
+
+    </RelativeLayout>
+
+</LinearLayout>

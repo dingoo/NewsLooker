@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:background="@color/toolbar_bg"
+    android:orientation="horizontal" >
+
+
+    <ImageView
+            android:id="@+id/action_favor"
+            style="@style/toolbar_action"
+            android:src="@drawable/ic_action_favor_normal"
+            android:layout_weight="1.0"/>
+
+    <ImageView
+            android:id="@+id/action_write_comment"
+            style="@style/toolbar_action"
+            android:src="@drawable/ic_action_write"
+            android:layout_weight="1.0"/>
+
+    <FrameLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:id="@+id/action_view_comment"
+            style="@style/toolbar_action"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_action_comment" />
+
+        <TextView
+            android:id="@+id/action_comment_count"
+            style="@style/toolbar_action_comment"
+            android:text="100"/>
+    </FrameLayout>
+
+    <ImageView
+            android:id="@+id/action_report"
+            style="@style/toolbar_action"
+            android:src="@drawable/ic_action_report"
+            android:layout_weight="1.0"/>
+
+    <ImageView
+            android:id="@+id/action_share"
+            style="@style/toolbar_action"
+            android:src="@drawable/ic_action_share"
+            android:layout_weight="1.0"/>
+
+</LinearLayout>

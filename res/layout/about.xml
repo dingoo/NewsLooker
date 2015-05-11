@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#E6E5E5"
+              android:orientation="vertical" >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white" >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="关于软件"
+                android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/headimg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/newslooker"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+        <TextView
+                android:id="@+id/appdescribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_below="@+id/headimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#ff708ff0"
+                android:gravity="center"/>
+
+        <Button
+                android:id="@+id/update"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appdescribe"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="更    新" />
+    </RelativeLayout>
+
+</LinearLayout>

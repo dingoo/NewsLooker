@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ffffff">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+    <TextView
+            android:id="@+id/tv_un"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="注册帐号:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    <EditText
+            android:id="@+id/et_un"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_below="@id/tv_un"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip" />
+
+    <TextView
+            android:id="@+id/tv_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_below="@id/et_un"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="密码:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_below="@id/tv_pw"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip"
+            android:maxLines="200"
+            android:password="true"
+            android:scrollHorizontally="true" />
+
+        <TextView
+                android:id="@+id/tv_cpw"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_below="@id/et_pw"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="10dip"
+                android:gravity="bottom"
+                android:text="确认密码:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        <EditText
+                android:id="@+id/et_cpw"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_below="@id/tv_cpw"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="10dip"
+                android:maxLines="200"
+                android:password="true"
+                android:scrollHorizontally="true" />
+
+        <Button
+                android:id="@+id/btn_reg"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_below="@id/et_cpw"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:onClick="onRegClick"/>
+
+        <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_below="@id/et_cpw"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dip"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="重置"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:onClick="onRegClick"/>
+    </RelativeLayout>
+
+</LinearLayout>
